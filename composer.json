@@ -1,9 +1,9 @@
 {
-    "name": "alvercix/alvercix",
+    "name": "reyesli/mp-ecommerce-php",
     "authors": [
         {
-            "name": "Jesús Ruiz",
-            "email": "fixboop@gmail.com"
+            "name": "reyesli",
+            "email": "reyeslinares09@gmail.com"
         }
     ],
     "require": {

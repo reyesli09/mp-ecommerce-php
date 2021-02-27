@@ -6,20 +6,11 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'd0a4a2cb1411b7ef2b766620bcda1d069166293e',
-    'name' => 'alvercix/alvercix',
+    'reference' => 'f58c4dc2a529d97c70f3aecb335d1aaf67b31ce6',
+    'name' => 'reyesli/mp-ecommerce-php',
   ),
   'versions' => 
   array (
-    'alvercix/alvercix' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'd0a4a2cb1411b7ef2b766620bcda1d069166293e',
-    ),
     'doctrine/annotations' => 
     array (
       'pretty_version' => '1.12.1',
@@ -109,6 +100,15 @@
       array (
       ),
       'reference' => '2ea4d51f6b29d568b3a06d430114467fc2ab6b90',
+    ),
+    'reyesli/mp-ecommerce-php' => 
+    array (
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f58c4dc2a529d97c70f3aecb335d1aaf67b31ce6',
     ),
   ),
 );
