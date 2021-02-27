@@ -19,48 +19,6 @@ $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
-// Número de orden del pedido con correo
-$preference->external_reference = 'reyeslinares09@gmail.com';
-
-// Datos del comprador
-$payer = new MercadoPago\Payer();
-$payer->name = "Lalo";
-$payer->surname = "Landa";
-$payer->email = "test_user_81131286@testuser.com";
-$payer->phone = array(
-"area_code" => "52",
-"number" => "5549737300"
-);
-
-$payer->address = array(
-"street_name" => "Insurgentes Sur",
-"street_number" => 1602,
-"zip_code" => "0394​0"
-);
-
-$preference->payer = $payer;
-
-// Medios de Pago
-$preference->payment_methods = array(
-    "excluded_payment_methods" => array(
-        array("id" => "amex")
-    ),
-    "excluded_payment_types" => array(
-        array("id" => "atm")
-    ),
-    "installments" => 6
-);
-
-// Páginas de retorno (back_url)
-$preference->back_urls = array(
-    "success" => "https://reyes-mp-commerce-php.herokuapp.com/success.php",
-    "failure" => "https://reyes-mp-commerce-php.herokuapp.com/failure.php",
-    "pending" => "https://reyes-mp-commerce-php.herokuapp.com/pending.php"
-);
-$preference->auto_return = "approved";
-
-$preference->notification_url = "https://reyes-mp-commerce-php.herokuapp.com/notificacion.php?source_news=webhooks";
-//$preference->notification_url = "https://reyes-mp-commerce-php.herokuapp.com/notificacion.php";
 $preference->save();
 ?>
 
