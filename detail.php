@@ -14,13 +14,13 @@ $item = new MercadoPago\Item();
 $item->id = 1234;
 $item->title = $_POST['title'];
 $item->description = '​Dispositivo móvil de Tienda e-commerce';
-$item->picture_url = 'https://ruizpac-mp-commerce-php.herokuapp.com'.$_POST['img'];
+$item->picture_url = 'https://reyes-mp-commerce-php.herokuapp.com'.$_POST['img'];
 $item->quantity = $_POST['unit'];
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
 // Número de orden del pedido con correo
-$preference->external_reference = 'ruizpac98@gmail.com';
+$preference->external_reference = 'reyeslinares09@gmail.com';
 
 // Datos del comprador
 $payer = new MercadoPago\Payer();
@@ -53,14 +53,14 @@ $preference->payment_methods = array(
 
 // Páginas de retorno (back_url)
 $preference->back_urls = array(
-    "success" => "https://ruizpac-mp-commerce-php.herokuapp.com/success.php",
-    "failure" => "https://ruizpac-mp-commerce-php.herokuapp.com/failure.php",
-    "pending" => "https://ruizpac-mp-commerce-php.herokuapp.com/pending.php"
+    "success" => "https://reyes-mp-commerce-php.herokuapp.com/success.php",
+    "failure" => "https://reyes-mp-commerce-php.herokuapp.com/failure.php",
+    "pending" => "https://reyes-mp-commerce-php.herokuapp.com/pending.php"
 );
 $preference->auto_return = "approved";
 
-$preference->notification_url = "https://ruizpac-mp-commerce-php.herokuapp.com/notificacion.php?source_news=webhooks";
-//$preference->notification_url = "https://ruizpac-mp-commerce-php.herokuapp.com/notificacion.php";
+$preference->notification_url = "https://reyes-mp-commerce-php.herokuapp.com/notificacion.php?source_news=webhooks";
+//$preference->notification_url = "https://reyes-mp-commerce-php.herokuapp.com/notificacion.php";
 $preference->save();
 ?>
 
